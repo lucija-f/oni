@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tisja ART</title>
+
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="gray">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <hr class="crta-logo" />
+      <div class="gray">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <div class="nav-list-holder">
+                <ul class="nav-list">
+                  <li><a href="#">GALERIJA</a></li>
+                  <li><a href="#">PROIZVODI</a></li>
+                  <li><a href="#">DOGAĐANJA</a></li>
+                  <li><a href="about.html">O TISJI</a></li>
+                  <li><a href="contact.html">KONTAKT</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="hamburger">
+              <button class="navbar" aria-label="Open/Close Navigation">
+                <span class="hambi-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <main>
+      <div class="container">
+        <h2>KONTAKTIRAJ ME</h2>
+        <div class="row contact_row">
+          <div class="col-sm-12 col-md-6 col-lg-6 kontakt">
+            <p>Za bilo kakva pitanja možeš me kontaktirati na:</p>
+            <p>
+              E-mail: <a href="mailto:oni@tisja.tisja">oni@tisja.tisja</a>
+            </p>
+            <p>Tel: 555 555 5555</p>
+            <p>Mob: 555 555 5555</p>
+            <p>Adresa: Trg bana Josipa Jelačića, 10000 Zagreb</p>
+            <hr />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 forma">
+            <form method="POST" action="#">
+              <label for="name">IME I PREZIME:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Tvoje ime.."
+              />
+
+              <label for="email">E-MAIL:</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Tvoj e-mail.."
+              />
+
+              <label for="msg">PORUKA:</label>
+              <textarea
+                id="msg"
+                name="msg"
+                placeholder="Poruka.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Pošalji" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <p id="footer_tekst">
+          <a href="kontakt.html">KONTAKT</a>
+          <span>|</span>
+          <a href="#.html">OPĆI UVJETI</a>
+        </p>
+        <p id="footer_tekst">©LucijaF 2021.</p>
+      </div>
+    </footer>
+
+    <script>
+      var navToggler = document.querySelectorAll(".navbar")[0];
+      var dropdown = document.querySelectorAll(".nav-list")[0];
+      navToggler.addEventListener("click", function () {
+        dropdown.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

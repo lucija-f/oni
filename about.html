@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tisja ART</title>
+
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      type="text/css"
+      charset="utf-8"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="gray">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <hr class="crta-logo" />
+      <div class="gray">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <div class="nav-list-holder">
+                <ul class="nav-list">
+                  <li><a href="#">GALERIJA</a></li>
+                  <li><a href="#">PROIZVODI</a></li>
+                  <li><a href="#">DOGAĐANJA</a></li>
+                  <li><a href="about.html">O TISJI</a></li>
+                  <li><a href="contact.html">KONTAKT</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="hamburger">
+              <button class="navbar" aria-label="Open/Close Navigation">
+                <span class="hambi-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <main>
+      <div class="container o_tisji">
+        <h1>O TISJI</h1>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 o_tisji_img">
+            <picture>
+              <source media="(min-width:576px)" srcset="img/tisja-750.jpg" />
+              <source
+                media="(min-width:240px) and (max-width:575px)"
+                srcset="img/tisja-210.jpg"
+              />
+              <img
+                src="img/tisja-210.jpg"
+                width="210"
+                height="326"
+                alt="tisja"
+              />
+            </picture>
+          </div>
+          <div class="col-sm-12 col-md-8 col-lg-8 articles">
+            <p>
+              Tisja Kljaković rođena je 30. lipnja 1979. godine u Splitu.
+              Završila je Školu likovnih umjetnosti — smjer slikarski dizajn. U
+              travnju 2003. godine diplomirala je slikarstvo na Umjetničkoj
+              akademiji u Splitu u klasi prefesora Gorkog Žuvele.
+            </p>
+            <p>
+              Djela joj se nalaze u fundusu Moderne galerije u Zagrebu, Gleriji
+              Sv. Krševana u Šibeniku, te u privatnim zbirkama diljem svijeta.
+              Članica je Hrvatske zajednice samostalnih umjetnika i Hrvatskog
+              društva likovnih umjetnika. Autorica je hit-knjiga U malu je uša
+              đava i Oni. Trenutačno radi kombiniranom tehnikom, visokog
+              reljefa, koristeći drvo i akril. Živi i radi u Splitu.
+            </p>
+            <p>
+              Autorica je hit-knjiga U malu je uša đava i Oni. Trenutačno radi
+              kombiniranom tehnikom, visokog reljefa, koristeći drvo i akril.
+              Živi i radi u Splitu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <p id="footer_tekst">
+          <a href="kontakt.html">KONTAKT</a>
+          <span>|</span>
+          <a href="#.html">OPĆI UVJETI</a>
+        </p>
+        <p id="footer_tekst">©LucijaF 2021.</p>
+      </div>
+    </footer>
+
+    <script>
+      var navToggler = document.querySelectorAll(".navbar")[0];
+      var dropdown = document.querySelectorAll(".nav-list")[0];
+      navToggler.addEventListener("click", function () {
+        dropdown.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
